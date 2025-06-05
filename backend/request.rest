@@ -12,3 +12,13 @@ Content-Type: application/json
     "email": "john@gmail.com",
     "password": "password123"
 }
+
+###
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "Bagus Prasetyo",
+    "email": "bagus@gmail.com",
+    "password": "password321"
+}
