@@ -17,16 +17,12 @@ const AddUser = () => {
                         <input type="text" className="input" placeholder='Email' />
                     </div>
                 </div>
-                {/* <div className='field'>
+                <div className='field'>
                     <label className='label'>Password</label>
                     <div className="control">
-                        <div className="select is-fullwidth">
-                            <select>
-                                <option value=""></option>
-                            </select>
-                        </div>
+                        <input type="password" className="input" placeholder='Password' />
                     </div>
-                </div> */}
+                </div>
                 <div className='field'>
                     <button type='submit' className="button is-success">
                         Save
