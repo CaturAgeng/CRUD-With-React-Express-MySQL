@@ -10,7 +10,7 @@ useEffect(() => {
 
 const getUsers = async () => {
   const response = await axios.get('http://localhost:5000/users');
-  console.log(response.data);
+  setUsers(response.data);
 }
 
   return (
@@ -27,13 +27,18 @@ const getUsers = async () => {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
+                {users.map((user, index) => (
+                  <tr key={user.id}>
+                    <td>{index + 1}</td>
+                    <td>{user.name}</td>
+                    <td>{user.email}</td>
+                    <td>{user.password}</td>
+                    <td>
+                      <button className='button is-small is-info'>Edit</button>
+                      <button className='button is-small is-danger ml-2'>Delete</button>
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
         </div>
