@@ -4,4 +4,4 @@ This is a CRUD application using a tech stack like React.js, Express.js and MySQ
 
 ## Note :
 
-To run Backend and Frontend together, i install concurrently in folder root (CRUD-With-React-Express-MySQL)
+To run Backend and Frontend together, i install concurrently in folder root (CRUD-With-React-Express-MySQL). And to run write "npm run dev" in terminal
